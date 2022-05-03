@@ -1,0 +1,277 @@
+@font-face
+{
+    font-family: "coolvetica";
+    src: url("../fontes/coolvetica rg.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "Fad";
+    src: url("../fontes/Fad Script.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.first-content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.993) 10%, rgba(255, 255, 255, 0)), url('../imagens/automacao/electric-g4121f0efb_1920.jpg'), no-repeat;
+    color: #2b3244;
+    font-size: 2rem;
+}
+
+.first-content h1 {
+    width: 700px;
+    margin-left: 15%;
+    z-index: 1;
+}
+
+.first-content p {
+    margin: 30px 0 30px 15%;
+    width: 50%;
+    color: #585858;
+    font-size: 1.4rem;
+}
+
+.first-content ul {
+    margin-left: 14%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 440px;
+}
+
+.first-content li {
+    margin: 10px 20px;
+    list-style: none;
+    height: 52px;
+}
+
+.first-content ul li a {
+    display: flex;
+    height: 52px;
+}
+
+.first-content .link-1 button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: #FF740A;
+    padding: 15px 20px;
+    border-radius: 30px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.2s ease all;
+}
+
+.first-content .link-1 button:hover {
+    background: #FF9233;
+    transform: scale(1.02);
+}
+
+.first-content .link-2 button {
+    display: flex;
+    align-items: center;
+    border: 3px solid #FF740A;
+    color: #FF740A;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin: 0;
+    transition: 0.2s ease all;
+}
+
+.first-content .link-2 button:hover {
+    border: 3px solid #FF9233;
+    color: #FF9233;
+    transform: scale(1.02);
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.welcome {
+    text-transform: uppercase;
+    color: #2b3244;
+    margin-bottom: 10px;
+}
+
+.welcome span {
+    color: #FF740A;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.time {
+    text-transform: uppercase;
+    color: #2b3244;
+    margin: 10px 0;
+}
+
+.time + p {
+    margin: 0;
+}
+
+.time + p span {
+    color: #FF740A;
+}
+
+#cards-container {
+    width: 100%;
+    min-width: 70%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 530px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px 10px;
+    transition: 0.3s ease all;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.cards .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+.cards .imagem img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.dados {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #070D0D;
+    padding: 20px 0;
+}
+
+.cargo {
+    font-family: Fad;
+    color: #E5EBF1;
+    font-size: 23px;
+    margin: 0 0 10px 0;
+}
+
+.nome {
+    font-family: coolvetica;
+    font-size: 20px;
+    color: #FF740A;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.resp {   
+    text-align: center;
+    color: #E5EBF1;
+    font-size: 12px;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a ion-icon {
+    margin-top: 7px;
+    font-size: 25px;
+    color: white;
+    transition: 0.2s ease all;
+}
+
+.redes a ion-icon:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    .first-content h1{
+        text-align: center;
+        font-size: 3rem;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .first-content p{
+        text-align: center;
+        font-size: 1rem;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .first-content ul{
+        text-align: center;
+        font-size: 1rem;
+        margin: 20px auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-content h1{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 0 auto;
+    }
+
+    .content-container {
+        text-align: center;
+    }
+}

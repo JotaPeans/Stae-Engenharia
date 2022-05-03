@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+#white-space {
+    min-height: 8vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    width: 100%;
+    position: absolute;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 150px;
+}
+
+.logo img {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo a {
+    color: #FF7900;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #171827;
+    font-weight: bold;
+    transition: 0.12s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-links li.items a:hover {
+    color: #35395A;
+    font-weight: bold;
+}
+
+.nav-links button {
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #31B0DD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-links button:hover {
+    background-color: #1F96C1;
+}
+
+.servicos {
+    position: relative;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.dropdown {
+    background-color: white;
+    position: absolute;
+    transform: translateY(-200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #ff7729;
+    padding: 10px 0 ;
+    opacity: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.dropdown.active {
+    opacity: 1;
+    transform: translateY(40px);
+}
+
+.dropdown li {
+    list-style: none;
+    margin: 0 15px;
+    margin: 8px 20px;
+}
+
+.dropdown li a {
+    color: #35395A;
+    font-weight: bold;
+    transition: 0.12s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown li a:hover {
+    color: #ff7729;
+    font-weight: bold;
+}
+
+.burguer {
+    display: none;
+}
+
+.burguer .line1 {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+}
+
+.burguer .line2 {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+}
+
+.burguer .line3 {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(100, 100, 100);
+}
+
+@media (max-width: 900px) {
+    .burguer {
+        margin-left: 100px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        z-index: 100;
+    }
+
+    .toggle .line1 {
+        transform: rotate(45deg) translate(6px, 7px);
+        background-color: white;
+    }
+    .toggle .line2 {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(-45deg) translate(7px, -8px);
+        background-color: white;
+    }
+
+    .nav-links {
+        z-index: 10;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #071013e8;
+        top: 10vh;
+        right: -500px;
+        height: 90vh;
+        width: 200px;
+        box-shadow: 0 -10vh #071013e8;
+        transition: 0.5s ease all;
+    }
+
+    .nav-links.active {
+        transform: translateX(-500px);
+    }
+
+    .nav-links li a {
+        color: #ff7729;
+        font-weight: bold;
+        transition: 0.12s ease-in-out;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+    .nav-links li.items a:hover {
+        color: #E3E3E3;
+    }
+
+    .dropdown {
+        background-color: #071013e8;
+        top: 40px;
+        transform: translateX(200px);
+    }
+    
+    .dropdown.active {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    body.hidden {
+        overflow: hidden;
+    }
+
+}

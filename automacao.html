@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>STAE Engenharia</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/servicos.css">
+        <link rel="shortcut icon" href="imagens/icone.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="imagens/Logotipo s fundo - 1.png" alt="STAE"></a>
+            </div>
+
+            <ul class="nav-links">
+                <li class="items"><a href="index.html">HOME</a></li>
+                <li class="items"><a href="sobre.html">SOBRE</a></li>
+                <li class="items">
+                    <div class="servicos">
+                        <a>SERVIÇOS</a>
+                        <div class="dropdown">
+                            <ul> 
+                                <li><a href='automacao.html'>AUTOMAÇÃO</a></li>
+                                <li><a href='eletrica.html'>ELÉTRICA</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="items"><a href="clientes.html">CLIENTES</a></li>
+                <li class="items"><a href="contato.html"><button>CONTATO</button></a></li>
+            </ul>
+
+            <div class="burguer">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+
+        <div id="white-space"></div>
+
+        <div id="automacao">
+            <h1>
+                Nossos servicos de automação industrial
+            </h1>
+        </div>
+
+        <div id="box">
+            <div id="container-servicos">
+
+                <div class="cards">
+                    <h2>Implementação de souluções</h2>
+                    <img src="imagens/automacao/electric-g4121f0efb_1920.jpg">
+                    <p>Desenvolvimento de sistemas automatizados para os diversos ramos industriais.</p>
+                </div>
+
+                <div class="cards">
+                    <h2>Retrofitting</h2>
+                    <img src="imagens/automacao/retrofit-quadro-eletrico-01.jpg">
+                    <p>Atualização de quadros e sistemas com o que há de mais novo no merado.</p>
+                </div>
+
+                <div class="cards">
+                    <h2>Interface Homem Máquina (IHM)</h2>
+                    <img src="imagens/automacao/ihm.png">
+                    <p>Desenvolvimento de projetos e implementação de IHMs para melhor operação e visualização das variáveis dos processos, dos mais diversos fabricantes.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer>Copyright © 2020 STAE – todos os direitos reservados.</footer>
+    
+        <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".cards"),{
+            max: 1,
+            speed: 400
+        });
+        </script>
+    
+    </body>
+</html>
